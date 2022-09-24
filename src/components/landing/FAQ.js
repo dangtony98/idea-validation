@@ -32,11 +32,11 @@ const Question = ({ question }) => {
 		<div className="px-2 py-4 border-b-2">
 			<div 
 				onClick={handleOpen}
-				className="flex items-center"
+				className="flex items-top"
 			>
 				<FontAwesomeIcon 
 					icon={isOpen ? faMinus : faPlus} 
-					className="text-primary text-xl"
+					className="text-primary text-xl mt-2"
 				/>
 				<h2 className="text-midnight-blue text-2xl font-bold ml-2">
 					{question.question}

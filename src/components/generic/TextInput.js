@@ -7,7 +7,7 @@ const TextInput = ({ placeholder, value, setValue }) => {
 			placeholder={placeholder}
 			value={value}
 			onChange={(e) => setValue(e.target.value)}
-			className="px-7 py-3 flex-1 outline-none bg-transparent border-2 rounded-lg font-normal text-midnight-blue text-xl border-gray-600 focus:border-primary"
+			className="px-7 py-3 flex-1 outline-none bg-gray-100 border-2 rounded-lg font-normal text-midnight-blue text-xl border-gray-400 focus:border-primary"
 		/>
 	);
 };

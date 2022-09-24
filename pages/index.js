@@ -1,34 +1,25 @@
 import Head from "next/head";
 import Image from "next/image";
-import { useEffect, useState } from 'react';
-import { config, dom  } from "@fortawesome/fontawesome-svg-core";
+import { useEffect, useState } from "react";
+import { config, dom } from "@fortawesome/fontawesome-svg-core";
 import Header from "../src/components/generic/Header";
-import TextInput from "../src/components/generic/TextInput";
-import SubmitInput from "../src/components/generic/SubmitInput";
 import Separator from "../src/components/generic/Separator";
+import Waitlist from "../src/components/landing/Waitlist";
 import FeatureGrid from "../src/components/landing/FeatureGrid";
 import FeatureSection from "../src/components/landing/FeatureSection";
 import FAQ from "../src/components/landing/FAQ";
 import CTA from "../src/components/landing/CTA";
 import Footer from "../src/components/generic/Footer";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
 export default function Home() {
-	const [email, setEmail] = useState("");
-	
 	useEffect(() => {
-		AOS.init();
+		AOS.init({
+			offset: 200,
+			duration: 750,
+		});
 	}, []);
-	
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		
-		console.log("email to submit!");
-		console.log(email);
-	}
 
 	return (
 		<div>
@@ -40,7 +31,10 @@ export default function Home() {
 			</Head>
 			<main className="bg-white">
 				<Header />
-				<div data-aos="fade-up" className="px-4 bg-gradient-to-b from-white to-primary">
+				<div
+					data-aos="fade-up"
+					className="px-4 bg-gradient-to-b from-white to-primary"
+				>
 					<div className="text-center max-w-2xl m-auto pt-40">
 						<h1 className="text-7xl font-bold text-midnight-blue mb-16">
 							Lorem ipsum dolor sit amet
@@ -49,21 +43,10 @@ export default function Home() {
 							</span>
 						</h1>
 						<p className="text-2xl font-medium text-gray-600 my-8">
-							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+							Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+							nisi ut aliquip ex ea commodo consequat.
 						</p>
-						<form 
-							onSubmit={handleSubmit}
-							className="my-16 px-20 flex"
-						>
-							<TextInput 
-								placeholder="Enter your email"
-								value={email}
-								setValue={setEmail}
-							/>
-							<SubmitInput 
-								value="Join the waitlist"
-							/>
-						</form>
+						<Waitlist />
 					</div>
 					<div className="max-w-6xl h-96 bg-midnight-blue m-auto mt-20 rounded-t-lg"></div>
 					<div className="max-w-6xl h-96 bg-midnight-blue m-auto mb-20 rounded-b-lg"></div>
@@ -72,7 +55,8 @@ export default function Home() {
 							Duis aute irure dolor in reprehenderit in voluptate velit
 						</h2>
 						<p className="text-center text-2xl font-medium my-8 text-white">
-							esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+							esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+							occaecat cupidatat non proident
 						</p>
 					</div>
 				</div>
@@ -82,12 +66,13 @@ export default function Home() {
 							Sunt in culpa qui officia deserunt mollit anim id est laborum
 						</h2>
 						<p className="text-center text-2xl font-medium my-8 text-gray-600">
-							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+							accusantium doloremque laudantium, totam rem aperiam
 						</p>
 					</div>
 				</div>
-				<div className="px-2">
-					<FeatureSection 
+				<div className="px-2 overflow-hidden">
+					<FeatureSection
 						title="Neque porro quisquam est, qui dolorem ipsum"
 						subtitle="Quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora"
 						quote="Incidunt ut labore et dolore magnam aliquam"
@@ -96,7 +81,7 @@ export default function Home() {
 					/>
 				</div>
 				<div className="mt-16 px-2">
-					<FeatureSection 
+					<FeatureSection
 						title="Et quasi architecto beatae vitae dicta sunt explicabo"
 						subtitle="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
 						quote="Sed quia consequuntur magni dolores eos qui ratione."
@@ -108,7 +93,7 @@ export default function Home() {
 					<FAQ />
 				</div>
 				<div className="my-16 px-2" data-aos="fade-up">
-					<CTA 
+					<CTA
 						title="Ut enim ad minima veniam, quis nostrum exercitationem"
 						subtitle="ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur"
 					/>

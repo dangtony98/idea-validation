@@ -5,7 +5,7 @@ const SubmitInput = ({ value }) =>  {
 		<input 
 			type="submit"
 			value={value}
-			className="ml-4 px-7 py-3 rounded-lg border-2 border-primary text-xl bg-primary text-white font-medium cursor-pointer hover:opacity-50 duration-200"
+			className="w-full px-7 py-3 rounded-lg border-2 border-primary text-xl bg-primary text-white font-medium cursor-pointer hover:opacity-50 duration-200"
 		/>
 	);
 }

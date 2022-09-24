@@ -14,8 +14,8 @@ const FeatureSection = ({
 		AOS.init();
 	}, []);
 	return (
-		<div data-aos={side === "right" ? "fade-right" : "fade-left"} className={`flex ${side === "right" ? "flex-row-reverse" : ""} max-w-6xl m-auto py-16`}>
-			<div className={`flex-1 px-16 py-4 border-primary ${side === "right" ? "border-r-2" : "border-l-2"}`}>
+		<div data-aos={side === "right" ? "fade-right" : "fade-left"} className={`flex ${side === "right" ? "flex-row-reverse" : "flex-row"} max-w-6xl m-auto py-16`}>
+			<div className={`md:flex-1 px-8 py-4 border-primary ${side === "right" ? "border-r-2" : "border-l-2"}`}>
 				<div className="border-b-2 border-primary">
 					<h2 className="text-midnight-blue text-4xl font-bold mt-4">
 						{title}
@@ -34,7 +34,8 @@ const FeatureSection = ({
 					</div>
 				</div>
 			</div>
-			<div className="flex-1 bg-midnight-blue rounded-lg">
+			<div className="md:flex-1 bg-midnight-blue rounded-lg">
+
 			</div>
 		</div>
 	);

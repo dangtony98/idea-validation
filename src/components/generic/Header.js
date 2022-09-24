@@ -8,7 +8,7 @@ const Header = () => {
 					Lorem
 				</h2>
 				<div className="flex items-center text-midnight-blue font-medium">
-					<p className="text-lg">Ipsum</p>
+					<p className="text-lg"></p>
 				</div>
 			</div>
 		</div>
