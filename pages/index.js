@@ -12,6 +12,7 @@ import CTA from "../src/components/landing/CTA";
 import Footer from "../src/components/generic/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller  } from 'react-scroll'
 
 export default function Home() {
 	useEffect(() => {
@@ -106,10 +107,11 @@ export default function Home() {
 				<div className="py-16 px-2" data-aos="fade-up">
 					<FAQ />
 				</div>
-				<div className="py-16 px-2" data-aos="fade-up">
+				<div className="py-16 px-2" data-aos="fade-up" onClick={() => scroll.scrollToTop()}>
 					<CTA
 						title="Ut enim ad minima veniam, quis nostrum exercitationem"
 						subtitle="ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur"
+						onCTAClick={scroll.scrollToTop}
 					/>
 				</div>
 				<Footer />

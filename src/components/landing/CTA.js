@@ -2,7 +2,8 @@ import React from "react";
 
 const CTA = ({
 	title,
-	subtitle
+	subtitle,
+	onCTAClick
 }) => {
 	return (
 		<div>
@@ -15,6 +16,7 @@ const CTA = ({
 						{subtitle}
 					</p>
 					<div
+						onClick={onCTAClick}
 						className="inline-block ml-4 px-7 py-3 rounded-lg border-2 border-white text-xl bg-white text-primary font-medium cursor-pointer hover:opacity-50 duration-200"
 					>
 						Request access &rarr;
