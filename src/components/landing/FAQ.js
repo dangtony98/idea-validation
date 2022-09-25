@@ -54,7 +54,7 @@ const Question = ({ question }) => {
 const FAQ = () => {
 	return (
 		<div className="m-auto max-w-2xl py-16">
-			<h2 className="text-midnight-blue text-4xl font-bold mt-4 text-center mb-8">
+			<h2 className="text-midnight-blue text-4xl font-bold text-center mb-8">
 				Frequently asked questions,
 				<span className="text-transparent text-primary underline-offset-2">
 					{` answered`}

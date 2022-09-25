@@ -38,14 +38,14 @@ const Form = ({ status, onSubmitted }) =>  {
 					/>
 					<div className="mt-2 md:mt-0 md:ml-2">
 						<SubmitInput 
-							value={status === "sending" ? "Joining..." : "Join the waitlist"}
+							value={status === "sending" ? "Requesting..." : `Request access`}
 						/>
 					</div>
 				</div>
 			) : (
 				<div className="m-auto">
 					<SubmitInput 
-						value="Joined. You'll hear back shortly ⚡️"
+						value="Requested. You'll hear back shortly ⚡️"
 					/>
 				</div>
 			)}

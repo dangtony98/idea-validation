@@ -58,10 +58,24 @@ export default function Home() {
 							esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
 							occaecat cupidatat non proident
 						</p>
+						<div className="flex justify-between m-auto p-8">
+							<div className="text-center">
+								<h2 className="text-6xl font-bold mb-2">100%</h2>
+								<p className="text-2xl font-medium">Pepperoni</p>
+							</div>
+							<div className="text-center">
+								<h2 className="text-6xl font-bold mb-2">24/7</h2>
+								<p className="text-2xl font-medium">Delivery</p>
+							</div>
+							<div className="text-center">
+								<h2 className="text-6xl font-bold mb-2">100k</h2>
+								<p className="text-2xl font-medium">Calories</p>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div className="bg-white py-16" data-aos="fade-up">
-					<div className="m-auto max-w-2xl my-16">
+					<div className="m-auto max-w-2xl py-16">
 						<h2 className="text-midnight-blue text-4xl font-bold mt-4 text-center">
 							Sunt in culpa qui officia deserunt mollit anim id est laborum
 						</h2>
@@ -89,10 +103,10 @@ export default function Home() {
 						side="right"
 					/>
 				</div>
-				<div className="my-16 px-2" data-aos="fade-up">
+				<div className="py-16 px-2" data-aos="fade-up">
 					<FAQ />
 				</div>
-				<div className="my-16 px-2" data-aos="fade-up">
+				<div className="py-16 px-2" data-aos="fade-up">
 					<CTA
 						title="Ut enim ad minima veniam, quis nostrum exercitationem"
 						subtitle="ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur"
@@ -104,7 +118,3 @@ export default function Home() {
 	);
 }
 
-// 1. Recommendations
-// 2. Accessibility
-
-// Another idea: Increase your digital footprint
