@@ -7,6 +7,8 @@ import Separator from "../src/components/generic/Separator";
 import Waitlist from "../src/components/landing/Waitlist";
 import FeatureGrid from "../src/components/landing/FeatureGrid";
 import FeatureSection from "../src/components/landing/FeatureSection";
+import HowItWorks from "../src/components/landing/HowItWorks";
+import Pricing from "../src/components/landing/Pricing";
 import FAQ from "../src/components/landing/FAQ";
 import CTA from "../src/components/landing/CTA";
 import Footer from "../src/components/generic/Footer";
@@ -36,8 +38,8 @@ export default function Home() {
 					data-aos="fade-up"
 					className="px-4 bg-gradient-to-b from-white to-primary"
 				>
-					<div className="text-center max-w-2xl m-auto pt-40">
-						<h1 className="text-7xl font-bold text-midnight-blue mb-16">
+					<div className="text-center max-w-2xl m-auto pt-32 md:pt-40">
+						<h1 className="text-6xl md:text-7xl font-bold text-midnight-blue mb-16">
 							Lorem ipsum dolor sit amet
 							<span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-primary">
 								{` copilot`}
@@ -50,43 +52,43 @@ export default function Home() {
 						<Waitlist />
 					</div>
 					<div className="max-w-6xl h-96 bg-midnight-blue m-auto mt-20 rounded-t-lg"></div>
-					<div className="max-w-6xl h-96 bg-midnight-blue m-auto mb-20 rounded-b-lg"></div>
+					<div className="max-w-6xl h-96 bg-midnight-blue m-auto md:mb-20 rounded-b-lg"></div>
 					<div className="m-auto max-w-2xl py-16" data-aos="fade-up">
-						<h2 className="text-white text-4xl font-bold mt-4 text-center">
-							Duis aute irure dolor in reprehenderit in voluptate velit
+						<h2 className="text-white text-5xl md:text-6xl font-bold mt-4 text-center">
+							Duis aute irure dolor in reprehenderit in
 						</h2>
 						<p className="text-center text-2xl font-medium my-8 text-white">
 							esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
 							occaecat cupidatat non proident
 						</p>
-						<div className="flex justify-between m-auto p-8">
-							<div className="text-center">
-								<h2 className="text-6xl font-bold mb-2">100%</h2>
+						<div className="md:flex justify-between m-auto">
+							<div className="text-center py-2 mb-8 md:mb-0">
+								<h2 className="text-5xl md:text-6xl font-bold mb-2">100%</h2>
 								<p className="text-2xl font-medium">Pepperoni</p>
 							</div>
-							<div className="text-center">
-								<h2 className="text-6xl font-bold mb-2">24/7</h2>
+							<div className="text-center py-2 mb-8 md:mb-0">
+								<h2 className="text-5xl md:text-6xl font-bold mb-2">24/7</h2>
 								<p className="text-2xl font-medium">Delivery</p>
 							</div>
-							<div className="text-center">
-								<h2 className="text-6xl font-bold mb-2">100k</h2>
+							<div className="text-center py-2">
+								<h2 className="text-5xl md:text-6xl font-bold mb-2">100k</h2>
 								<p className="text-2xl font-medium">Calories</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div className="bg-white py-16" data-aos="fade-up">
+				<div className="bg-white py-8 md:py-16" data-aos="fade-up">
 					<div className="m-auto max-w-2xl py-16">
-						<h2 className="text-midnight-blue text-4xl font-bold mt-4 text-center">
-							Sunt in culpa qui officia deserunt mollit anim id est laborum
+						<h2 className="text-midnight-blue text-5xl md:text-6xl font-bold mt-4 text-center">
+							Sunt in culpa qui officia deserunt mollit anim id
 						</h2>
-						<p className="text-center text-2xl font-medium my-8 text-gray-600">
+						<p className="text-center text-2xl font-medium mt-8 text-gray-600">
 							Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 							accusantium doloremque laudantium, totam rem aperiam
 						</p>
 					</div>
 				</div>
-				<div className="px-2 overflow-hidden">
+				<div className="px-4 overflow-hidden">
 					<FeatureSection
 						title="Neque porro quisquam est, qui dolorem ipsum"
 						subtitle="Quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora"
@@ -95,7 +97,7 @@ export default function Home() {
 						side="left"
 					/>
 				</div>
-				<div className="mt-16 px-2">
+				<div className="mt-8 md:mt-16 px-4 overflow-hidden">
 					<FeatureSection
 						title="Et quasi architecto beatae vitae dicta sunt explicabo"
 						subtitle="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
@@ -104,10 +106,23 @@ export default function Home() {
 						side="right"
 					/>
 				</div>
-				<div className="py-16 px-2" data-aos="fade-up">
+				<div className="py-8 md:py-16 mt-8 md:mt-16" data-aos="fade-up">
+					<HowItWorks 
+						title="Get up and running in minutes"
+						subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"
+					/>
+				</div>
+				<div className="py-8 md:py-16" data-aos="fade-up">
+					<Pricing 
+						title="Pricing plans for teams of all sizes"
+						subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"
+						onClick={scroll.scrollToTop}
+					/>
+				</div>
+				<div className="py-8 md:py-16 px-4" data-aos="fade-up">
 					<FAQ />
 				</div>
-				<div className="py-16 px-2" data-aos="fade-up" onClick={() => scroll.scrollToTop()}>
+				<div className="py-8 md:py-16 px-4" data-aos="fade-up" onClick={() => scroll.scrollToTop()}>
 					<CTA
 						title="Ut enim ad minima veniam, quis nostrum exercitationem"
 						subtitle="ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur"

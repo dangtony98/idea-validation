@@ -38,7 +38,7 @@ const Form = ({ status, onSubmitted }) =>  {
 					/>
 					<div className="mt-2 md:mt-0 md:ml-2">
 						<SubmitInput 
-							value={status === "sending" ? "Requesting..." : `Request access`}
+							value={status === "sending" ? "Requesting..." : `Get access`}
 						/>
 					</div>
 				</div>
