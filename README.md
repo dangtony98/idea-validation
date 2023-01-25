@@ -10,9 +10,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Backstory
 
-After repeatedly creating project/startup landing pages and finding same elements each time such as pricing, FAQ, CTA forms and buttons, I made a simple template with Next.js to speed up the process for everyone.
+After creating project/startup landing pages and finding repeat elements each time such as pricing, FAQ, CTA forms and buttons, I made a simple template with to speed up the process for everyone.
 
-Features:
+## Features:
 
 - Modern: built Next.js and Tailwind CSS.
 - Responsive: works across all screen sizes.
@@ -60,3 +60,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
         <img width="300" src="https://github.com/Infisical/infisical/raw/main/img/logoname-white.svg#gh-dark-mode-only" alt="infisical" />
     </a>
 </h1>
+<p align="center">
+  <p align="center">Open-source, E2EE, simple tool to manage secrets and configs across your team and infrastructure.</p>
+</p>
