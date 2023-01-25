@@ -1,5 +1,5 @@
 <h1 align="center">
-    Next.js Boilerplate Landing Page 🚀
+    Next.js Landing Page Template
 </h1>
 
 <p align="center">
@@ -7,6 +7,18 @@
 </p>
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Backstory
+
+After repeatedly creating project/startup landing pages and finding same elements each time such as pricing, FAQ, CTA forms and buttons, I made a simple template with Next.js to speed up the process for everyone.
+
+Features:
+
+- Modern: built Next.js and Tailwind CSS.
+- Responsive: works across all screen sizes.
+- Extensible: customize the page and easily connect/build an app on it.
+- Easy Deployment: easy to spin up and deploy to Vercel.
+- Beauty: aesthetic and alive with animations.
 
 ## Getting Started
 
@@ -43,6 +55,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Sponsors
 
-<p align="center">
-  <img src="https://github.com/Infisical/infisical/raw/main/img/logoname-white.svg#gh-dark-mode-only" alt="infisical" />
-</p>
+<h1 align="center">
+    <a href="https://github.com/Infisical/infisical">
+        <img width="300" src="https://github.com/Infisical/infisical/raw/main/img/logoname-white.svg#gh-dark-mode-only" alt="infisical" />
+    </a>
+</h1>
