@@ -59,7 +59,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
     <a href="https://github.com/Infisical/infisical">
         <img width="300" src="https://github.com/Infisical/infisical/raw/main/img/logoname-white.svg#gh-dark-mode-only" alt="infisical" />
     </a>
+    <p align="center">Open-source, E2EE, simple tool to manage secrets and configs across your team and infrastructure.</p>
 </h1>
-<p align="center">
-  <p align="center">Open-source, E2EE, simple tool to manage secrets and configs across your team and infrastructure.</p>
-</p>
